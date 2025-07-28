@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'br.com.dio.desafio'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Lombok
+    compileOnly 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+    // Testes, se quiser
+    testImplementation 'junit:junit:4.13.2'
+}
+
+application {
+    // Caminho completo da sua classe Main com pacote
+    mainClass = 'br.com.dio.desafio.Main'
+}
